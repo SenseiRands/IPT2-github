@@ -15,5 +15,10 @@ public static double divide(double a, double b) {
     }
     return a/b;
 }
-
+public static double modulus(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Modulus by zero is not allowed");
+    }
+    return a % b;
+}
 }
